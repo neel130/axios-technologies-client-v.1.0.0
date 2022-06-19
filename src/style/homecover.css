@@ -1,0 +1,163 @@
+.homecover-container {
+    width: 100vw;
+    height: 45vw;
+    background-color: #0a0b10;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.homecover-maincontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+
+.homecover-leftblock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 1.5;
+    color: var(--white);
+    position: relative;
+    z-index: 15;
+}
+
+.homecover-upperbtn {
+    position: relative;
+    bottom: 30px;
+    right:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#35353f54;
+    font-size: calc(0.4rem + 0.4vw);
+    padding: 0.5rem 1rem;
+    border-radius: 13px;
+    height: 50px;
+}
+
+.homecover-title {
+    position: relative;
+    right: 100px;
+    font-size: calc(3rem + 1vw);
+    line-height: 1.2;
+    padding: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.homecover-subtext {
+    position: relative;
+    right: 100px;
+    font-size: calc(0.5rem + 0.5vw);
+    color: rgb(161, 161, 161);
+}
+
+.homecover-button {
+    background-color: #00ba90;
+    color: #000000;
+    padding: 0.8rem 1.3rem;
+    margin-top: 2rem;
+    border-radius: 18px 0 18px 0;
+    cursor: pointer;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.homecover-button img {
+    width: 1.5rem;
+}
+
+.homecover-button:hover {
+    transform: scale(1.1);
+}
+
+.homecover-button:active {
+    transform: scale(0.9);
+}
+
+.homecover-rightblock {
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+    max-width: 100%;
+    width: calc(30% + 20vw);
+    height: auto;
+    z-index: 7;
+}
+
+@media only Screen and (max-width: 48em) {
+    .homecover-container {
+        height: 70vw;
+        display: block;
+    }
+
+    .homecover-maincontent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .homecover-leftblock {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: calc(2.5rem + 2.5vw);
+        filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .homecover-button {
+        padding: 0.2rem 1rem;
+    }
+
+    .homecover-rightblock img {
+        align-self: flex-start;
+        position: absolute;
+        bottom: 0;
+        width: calc(30% + 20vw);
+        opacity: 0.5;
+    }
+}
+
+@media only Screen and (max-width: 40em) {
+    .homecover-upperbtn{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        height: 45px;
+        border-radius: 20px;
+    }
+    .homecover-leftblock {
+        filter: none;
+    }
+
+    .homecover-title {
+        position: relative;
+        right: 0;
+        font-size: calc(2.1rem + 1vw);
+    }
+    .homecover-subtext{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+
+    .homecover-rightblock img {
+        display: none;
+    }
+}
+
+@media only Screen and (max-width: 420px) {
+    .homecover-container {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+}

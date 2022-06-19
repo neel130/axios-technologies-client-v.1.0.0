@@ -1,0 +1,16 @@
+.autotype h1 a{
+    color: #ffae00;
+    font-size: 20px;
+}
+
+.autotype h1{
+    margin: 0;
+}
+
+
+@media only Screen and (max-width: 40em) {
+    .autotype h1 a{
+     
+        font-size: 14px;
+    }
+}

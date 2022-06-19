@@ -8,7 +8,7 @@ const ScrollToTop = lazy(() => import("./components/ScrollToTop/index"));
 
 function App() {
   return (
-    <>
+    <div >
       <Suspense fallback={null}>
         <GlobalStyle />
         {/* Hi There! */}
@@ -18,7 +18,7 @@ function App() {
         <Home />
         <Footer />
       </Suspense>
-    </>
+    </div>
   );
 }
 

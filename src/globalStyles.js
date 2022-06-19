@@ -17,18 +17,16 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    
 }
 html{
-  ${"" /* overflow-y: scroll; */}
+   overflow-y: scroll; 
   scroll-behavior:smooth;
   
 }
     body,
     html,
-    a {
-        font-family: 'Poppins', sans-serif;
-            }
+   
     body {
 
         margin:0;
