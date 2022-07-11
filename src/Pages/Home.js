@@ -3,8 +3,7 @@
 //Import all the require sections here
 import HomeCover from "../Sections/HomeCover/index";
 import About from "../Sections/About/index";
-import Services from "../Sections/Services/index";
-import Infoservice from "../Sections/Services/Services"
+import Services from "../Sections/Services/Services";
 import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
@@ -22,8 +21,7 @@ const Home = () => {
     <Container>
       <HomeCover />
       <About />
-      {/* <Services /> */}
-      <Infoservice/>
+      <Services />
       <Testimonials />
       <Contact />
     </Container>
