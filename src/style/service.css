@@ -12,9 +12,9 @@
 .upper-container{
     display: flex;
     /* justify-content: space-between; */
-    margin: 0 80px;
+    margin: 0 20px 0px 50px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 
@@ -27,9 +27,11 @@
 }
 
  .ai-bi-discription{
-    margin-left: 100px;
+    margin-left: 55px;
     width: 40vw;
-
+    height: 50vh;
+    box-shadow: -5px 0px 20px 28px white;
+    z-index: 3;
  }
 
 .ai-bi-discription h1{
