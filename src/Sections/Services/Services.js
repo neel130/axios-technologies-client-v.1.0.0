@@ -2,6 +2,9 @@ import React from 'react';
 import "../../style/service.css"
 import aIbIimage from "../../assets/service-image/ai-bi-cover-image.jpg"
 import sidebarimg from "../../assets/service-image/ai-bi-sidebar-img.png"
+import datagraph from "../../assets/service-image/data-pie-chart.png"
+import iotIcon  from '../../assets/service-image/iot.svg'
+
 
 function Services() {
   return <>
@@ -41,37 +44,41 @@ function Services() {
       </div>
 
       <div className="lower-container">
+
+
+        {/* Service Carousel Big Banner slidder section  */}
+
         <div className="axios-data-carousel">
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active carousel-one" data-bs-interval="5000">
 
-          
+
                 <h3 style={{ color: "white", fontSize: "45px", marginLeft: "100px", marginTop: "100px" }} >Artificial Intelligence</h3>
                 <p style={{ color: "whitesmoke", width: "480px", marginLeft: "100px", marginTop: "25px" }} >  AI systems work by ingesting large amounts of labeled training data,
                   analyzing the data for correlations and patterns, and using these patterns
                   to make predictions about future states</p>
-                <h6 style={{ color: "goldenrod", marginLeft: "250px", marginTop: "25px",cursor:"pointer" }} >Know More ..  </h6>
+                <h6 style={{ color: "goldenrod", marginLeft: "250px", marginTop: "25px", cursor: "pointer" }} >Know More ..  </h6>
 
               </div>
               <div class="carousel-item carousel-two" data-bs-interval="5000">
 
-                <h3 style={{ color: "white", fontSize: "45px", marginLeft: "100px", marginTop: "80px",width:"470px" }} >Business Intelligence Services</h3>
+                <h3 style={{ color: "white", fontSize: "45px", marginLeft: "100px", marginTop: "80px", width: "470px" }} >Business Intelligence Services</h3>
                 <p style={{ color: "whitesmoke", width: "480px", marginLeft: "100px", marginTop: "20px" }} > Our  business analytics, data mining, data visualization,
-                 data tools and infrastructure, and best practices to help organizations make more data-driven decisions </p>
-                <h6 style={{ color: "goldenrod", marginLeft: "250px", marginTop: "25px",cursor:"pointer" }} >Know More ..  </h6>
+                  data tools and infrastructure, and best practices to help organizations make more data-driven decisions </p>
+                <h6 style={{ color: "goldenrod", marginLeft: "250px", marginTop: "25px", cursor: "pointer" }} >Know More ..  </h6>
 
               </div>
               <div class="carousel-item carousel-three" data-bs-interval="5000">
 
-                <div style={{ marginLeft: "370px",background:"#143437eb",borderRadius:"20px",height:"270px",width:"480px",marginTop:"200px"}} className="bg-iot">
-                  <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop: "40px"}} > {'>'} Machine Learing</h5>
-                <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop :"30px" }} > {'>'} Internet of things</h5>
-                <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px" , marginTop :"30px"}} > {'>'} Embedded system</h5>
-                <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop :"30px"}} > {'>'} Data Analytics</h5>
-                <h6 style={{ color: "#d5f93e", marginLeft: "180px", marginTop: "25px",cursor:"pointer" }} >More ...  </h6>
+                <div style={{ marginLeft: "370px", background: "#143437eb", borderRadius: "20px", height: "270px", width: "480px", marginTop: "200px" }} className="bg-iot">
+                  <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop: "40px" }} > {'>'} Machine Learing</h5>
+                  <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop: "30px" }} > {'>'} Internet of things</h5>
+                  <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop: "30px" }} > {'>'} Embedded system</h5>
+                  <h5 style={{ color: "#d5f93e", fontSize: "25px", marginLeft: "100px", marginTop: "30px" }} > {'>'} Data Analytics</h5>
+                  <h6 style={{ color: "#d5f93e", marginLeft: "180px", marginTop: "25px", cursor: "pointer" }} >More ...  </h6>
                 </div>
-                
+
               </div>
 
             </div>
@@ -85,6 +92,40 @@ function Services() {
             </button>
           </div>
         </div>
+
+
+      {/* Service Data analytics and Graph Section  */}
+
+        <div style={{ display: "flex" }} className="data-analytics-sec">
+          <div style={{ marginLeft: "35px", marginTop: "10px" }} className="data-graph-img">
+            <img style={{ width: "45vw" }} src={datagraph} alt="" srcset="" />
+          </div>
+
+          <div style={{ marginTop: "70px",width:"40vw",marginLeft:"20px" }} className="data-graph-info">
+            <h2>Business Solutions</h2>
+            <p style={{marginTop:"30px"}}> Our business solution is a combination of ideas used
+             to help your company achieve its objectives. Our business solution comes in terms of marketing, 
+             payroll, auditing, accounting market research and analysis, among other essential business activities etc. </p>
+             <h5>Cloud : Data Analytics : IT Security : Infotech Management - more</h5>
+
+             <button style={{marginTop:"45px",}} type="button" class="btn btn-primary">Explore More</button>
+
+          </div>
+        </div>
+
+
+     {/* Service Robotic Automation and IOT Banner Section  */}
+     <div className="ra-iot-banner-container">
+      <div className="ra-iot-banner">
+        <img src={iotIcon} alt="" srcset="" />
+        <div style={{display:"flex",flexDirection:"column"}} className="iot-infodiv">
+        <h4>Explore Internet of things and Robotic Automation with AXIOS Infotech</h4>
+         <p>Know more {'>>'}</p>
+        </div>
+       
+      </div>
+     </div>
+
       </div>
     </div>
   </>;

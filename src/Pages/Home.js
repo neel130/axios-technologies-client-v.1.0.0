@@ -7,6 +7,7 @@ import Services from "../Sections/Services/Services";
 import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
+import Blog from "../Sections/Blog/Blog";
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ const Home = () => {
       <HomeCover />
       <About />
       <Services />
+      <Blog/>
       <Testimonials />
       <Contact />
     </Container>
